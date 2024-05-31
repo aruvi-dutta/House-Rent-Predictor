@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="https://kit.fontawesome.com/83a855bf5b.js" crossorigin="anonymous"></script>
+
+    <style>
+        /* html{
+            overflow: hidden;
+        }
+
+        body{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #login-form-container{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        } */
+        .but,h1{
+            text-align: center;
+            align-items: center;
+        }
+        body{
+            /* background: rgb(238,182,174);
+background: radial-gradient(circle, rgba(238,182,174,1) 0%, rgba(233,230,148,1) 100%); */
+         /* background-image: url('renthousee.png');
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            background-size: cover;  */
+            /* opacity: 0.6; */
+            }
+    </style> 
+  </head>
+  
+  <body>
+    <div class="container is-fluid">
+        <section class="hero is-info">
+            <div class="hero-body">
+              <p class="title">
+                Rent Calculator
+              </p>
+              <p class="subtitle">
+                Rent Calculator is an ML-based model that helps you caluculate your rent in an easy and effective way.
+              </p>
+            </div>
+          </section>
+    <!-- <h1 class="title "> Rent Calculator:</h1> -->
+    <br>
+    <!-- <div class="notification is-link is-light">
+        <button class="delete"></button>
+        Rent Calculator is an ML-based model that helps you caluculate your rent in an easy and effective way.
+      </div> -->
+      <article class="message is-info">
+        <div class="message-body">
+           Please enter the following information to get an estimate of your rent:
+        </div>
+      </article>
+    <!-- <div id="login-form-container"> -->
+    <!-- <h1> Enter the following Info</h1> -->
+    <div class="container">
+      <form method="POST" action="/" class="container">
+        <!-- <div class="card" style="width: 400px">
+          <div class="card-content">
+              <div class="media">
+              <div class="is-size-4 has-text-centered">Flower Variety Classification</div>
+              </div>
+              <div class="content">
+        <div class="form-group">
+
+          <div class="field">
+            <p class="control"> -->
+                <!-- <b>Enter the following info:</b> <br> -->
+                <b> Enter Type:</b>
+          <div class="control">
+            <label class="radio"> 
+              <input type="radio" name="type" value="3">
+              BHK1
+            </label>
+            <label class="radio">
+              <input type="radio" name="type" value="1">
+              BHK2
+            </label>
+            <input type="radio" name="type" value="2">
+            BHK3
+          </label>
+        </label>
+        <input type="radio" name="type" value="5">
+        BHK4
+      </label>
+    </label>
+    <input type="radio" name="type" value="4">
+    RK1
+  </label>
+          </div>
+          <!-- <p>Enter type:</p>
+            <input type="radio" name="type" value="3"> BHK1<br>
+        <input type="radio" name="type" value="1"> BHK2<br>  
+            <input type="radio" name="type" value="2"> BHK3<br>
+        <input type="radio" name="type" value="5"> BHK4<br>  
+            <input type="radio" name="type" value="4"> RK1<br> -->
+            <!-- </p>
+          </div> -->
+<!-- 
+          <p>Enter locality:</p>
+          <input type="text" name="locality">
+           -->
+           <div class="field">
+            <label class="label">Enter Latitude: </label>
+          
+            <div class="control">
+                <p class="control has-icons-left">
+              <input style="width:450px;" class="input" type="number" step="0.00000001" placeholder="Latitude" name="latitude">
+              <!-- <textarea class="textarea is-medium" rows="1"></textarea> -->
+              <span class="icon is-small is-left">
+                <i class="fas fa-location-dot"></i>
+              </span>
+            </div>
+            </p>
+          </div>
+          <div class="field">
+            <label class="label">Enter Longitude: </label>
+            <div class="control">
+                <p class="control has-icons-left">
+              <input style="width:450px;" class="input" type="number" step="0.00000001" placeholder="Longitude" name="longitude">
+              <span class="icon is-small is-left">
+                <i class="fas fa-location-dot"></i>
+              </span>
+            </div>
+        </p>
+          </div>
+          <!-- <p>Enter latitude:</p>
+          <input type="number" inputmode="decimal" step="0.00000001" name="latitude"> -->
+          <!-- 
+          <p>Enter longitude:</p>
+          <input type="number" inputmode="decimal" step="0.00000001" name="longitude"> -->
+          <b>Enter Lease Type:</b> <br>
+          <div class="control">
+            <label class="radio"> 
+              <input type="radio" name="lease_type" value="3">
+              FAMILY
+            </label>
+            <label class="radio">
+              <input type="radio" name="lease_type" value="1">
+              COMPANY
+            </label>
+            <input type="radio" name="lease_type" value="2">
+            BACHELOR
+          </label>
+        </label>
+        <input type="radio" name="lease_type" value="0">
+        ANYONE
+      </label>
+          </div>
+          <!-- <p>Enter lease_type:</p>
+          <input type="radio" name="lease_type" value="3"> FAMILY<br>
+      <input type="radio" name="lease_type" value="1"> COMPANY<br>
+      <input type="radio" name="lease_type" value=" 2"> BECHALOR<br>  
+          <input type="radio" name="lease_type" value="0"> ANYONE<br>
+       -->
+       <b>Enter GYM :</b> <br>
+          <div class="control">
+            <label class="radio"> 
+              <input type="radio" name="gym" value="1">
+              YES
+            </label>
+            <label class="radio">
+              <input type="radio" name="gym" value="0">
+              NO
+            </label>
+          </div>
+<!--       
+          <p>Enter GYM:</p>
+          <input type="radio" name="gym" value="1"> YES<br>  
+          <input type="radio" name="gym" value="0"> NO<br> -->
+          <b>Enter LIFT :</b> <br>
+          <div class="control">
+            <label class="radio"> 
+              <input type="radio" name="lift" value="1">
+              YES
+            </label>
+            <label class="radio">
+              <input type="radio" name="lift" value="0">
+              NO
+            </label>
+          </div>
+          <b>Enter Swimming Pool :</b> <br>
+          <div class="control">
+            <label class="radio"> 
+              <input type="radio" name="swimming_pool" value="1">
+              YES
+            </label>
+            <label class="radio">
+              <input type="radio" name="swimming_pool" value="0">
+              NO
+            </label>
+          </div>
+          <b>Enter Furnishing :</b> <br>
+          <div class="control">
+            <label class="radio"> 
+              <input type="radio" name="furnishing" value="2">
+              Semi
+            </label>
+            <label class="radio">
+              <input type="radio" name="lift" value="0">
+              Fully
+            </label>
+            <label class="radio">
+                <input type="radio" name="furnishing" value="1">
+                Not
+            </label>
+          </div>
+          <b>Enter Negotiable :</b> <br>
+          <div class="control">
+            <label class="radio"> 
+              <input type="radio" name="negotiable" value="1">
+              YES
+            </label>
+            <label class="radio">
+              <input type="radio" name="negotiable" value="0">
+              NO
+            </label>
+          </div>
+          <b>Enter Parking type :</b> <br>
+          <div class="control">
+            <label class="radio"> 
+              <input type="radio" name="Parking" value="1">
+              TWO-WHEELER
+            </label>
+            <label class="radio">
+              <input type="radio" name="Parking" value="2">
+              FOUR-WHEELER
+            </label>
+            <label class="radio">
+                <input type="radio" name="Parking" value="3">
+               BOTH
+            </label>
+            <label class="radio">
+                <input type="radio" name="Parking" value="0">
+               NONE
+            </label>
+          </div>
+         
+          <!-- <p>Enter LIFT:</p>
+          <input type="radio" name="lift" value="1"> YES<br>  
+          <input type="radio" name="lift" value="0"> NO<br> -->
+      
+          <!-- <p>Enter Swimming Pool:</p>
+          <input type="radio" name="swimming_pool" value="1"> YES<br>  
+          <input type="radio" name="swimming_pool" value="0"> NO<br>
+   -->
+          <!-- <p>Enter Furnishing:</p>
+          <input type="radio" name="furnishing" value="2">SEMI<br>
+      <input type="radio" name="furnishing" value="0">FULLY<br>  
+          <input type="radio" name="furnishing" value="1">Not<br> -->
+<!-- 
+          <p>Enter negotiable:</p>
+          <input type="radio" name="negotiable" value="1"> YES<br>  
+          <input type="radio" name="negotiable" value="0"> NO<br>
+           -->
+          <!-- <p>Enter Parking:</p>
+          <input type="radio" name="Parking" value="1"> TWO-WHEELER<br>  
+          <input type="radio" name="Parking" value="2"> FOUR-WHEELER<br>
+      <input type="radio" name="Parking" value="3"> BOTH<br>  
+          <input type="radio" name="Parking" value="0"> NONE<br> -->
+
+
+        <!-- <p>Enter SERVANT:</p>
+        <input type="radio" name="SERVANT" value="1"> YES<br>  
+        <input type="radio" name="SERVANT" value="0"> NO<br> -->
+        <div class="field">
+          <label class="label">Enter Property Size: </label>
+            <div class="control">
+                <p class="control has-icons-left">
+              <input class="input" type="number" placeholder="property size" name="size">
+              <span class="icon is-small is-left">
+                <i class="fas fa-house"></i>
+              </span>
+            </div>
+            </p>
+        </div>
+
+        <div class="field">
+            <label class="label">Enter Property Age: </label>
+              <div class="control">
+                  <p class="control has-icons-left">
+                <input class="input" type="number" placeholder="property age" name="age">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-calendar-days"></i>
+                </span>
+              </div>
+              </p>
+          </div>
+
+         
+          <div class="field">
+            <label class="label">Enter No of floors: </label>
+              <div class="control">
+                  <p class="control has-icons-left">
+                <input class="input" type="number" placeholder="no of floors" name="floor">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-stairs"></i>
+                </span>
+              </div>
+              </p>
+          </div>
+          <div class="field">
+            <label class="label">Enter No of bathrooms: </label>
+              <div class="control">
+                  <p class="control has-icons-left">
+                <input class="input" type="number" placeholder="no of bathrooms" name="bathrooms">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-bath"></i>
+                </span>
+              </div>
+              </p>
+          </div>
+          <!-- <p>Enter PROPERTY SIZE:</p>
+          <input type="number" name="size"> -->
+<!-- 
+          <p>Enter PROPERTY AGE:</p>
+          <input type="number" name="age"> -->
+<!--   
+          <p>Enter NO. OF FLOORS:</p>
+          <input type="number" name="floor"> -->
+<!--   
+          <p>Enter NO. OF BATHROOMS:</p>
+          <input type="number" name="bathrooms">
+   -->
+   <b>Enter INTERNET :</b> <br>
+   <div class="control">
+     <label class="radio"> 
+       <input type="radio" name="INTERNET" value="1">
+       YES
+     </label>
+     <label class="radio">
+       <input type="radio" name="INTERNET" value="0">
+       NO
+     </label>
+   </div>
+   <b>Enter AC :</b> <br>
+   <div class="control">
+     <label class="radio"> 
+       <input type="radio" name="AC" value="1">
+       YES
+     </label>
+     <label class="radio">
+       <input type="radio" name="AC" value="0">
+       NO
+     </label>
+   </div>
+
+   <b>Enter CLUB :</b> <br>
+   <div class="control">
+     <label class="radio"> 
+       <input type="radio" name="CLUB" value="1">
+       YES
+     </label>
+     <label class="radio">
+       <input type="radio" name="CLUB" value="0">
+       NO
+     </label>
+   </div>
+   <b>Enter INTERCOM :</b> <br>
+   <div class="control">
+     <label class="radio"> 
+       <input type="radio" name="INTERCOM" value="1">
+       YES
+     </label>
+     <label class="radio">
+       <input type="radio" name="INTERCOM" value="0">
+       NO
+     </label>
+   </div>
+   <b>Enter CPA :</b> <br>
+   <div class="control">
+     <label class="radio"> 
+       <input type="radio" name="CPA" value="1">
+       YES
+     </label>
+     <label class="radio">
+       <input type="radio" name="CPA" value="0">
+       NO
+     </label>
+   </div>
+   <b>Enter FS :</b> <br>
+   <div class="control">
+     <label class="radio"> 
+       <input type="radio" name="FS" value="1">
+       YES
+     </label>
+     <label class="radio">
+       <input type="radio" name="FS" value="0">
+       NO
+     </label>
+   </div>
+   <b>Enter SECURITY :</b> <br>
+   <div class="control">
+     <label class="radio"> 
+       <input type="radio" name="SECURITY" value="1">
+       YES
+     </label>
+     <label class="radio">
+       <input type="radio" name="SECURITY" value="0">
+       NO
+     </label>
+   </div>
+   <b>Enter SC :</b> <br>
+   <div class="control">
+     <label class="radio"> 
+       <input type="radio" name="SC" value="1">
+       YES
+     </label>
+     <label class="radio">
+       <input type="radio" name="SC" value="0">
+       NO
+     </label>
+   </div>
+   <b>Enter GP :</b> <br>
+   <div class="control">
+     <label class="radio"> 
+       <input type="radio" name="GP" value="1">
+       YES
+     </label>
+     <label class="radio">
+       <input type="radio" name="GP" value="0">
+       NO
+     </label>
+   </div>
+   <b>Enter PARK :</b> <br>
+   <div class="control">
+     <label class="radio"> 
+       <input type="radio" name="PARK" value="1">
+       YES
+     </label>
+     <label class="radio">
+       <input type="radio" name="PARK" value="0">
+       NO
+     </label>
+   </div>
+   <b>Enter RWH :</b> <br>
+   <div class="control">
+     <label class="radio"> 
+       <input type="radio" name="RWH" value="1">
+       YES
+     </label>
+     <label class="radio">
+       <input type="radio" name="RWH" value="0">
+       NO
+     </label>
+   </div>
+   <b>Enter STP :</b> <br>
+   <div class="control">
+     <label class="radio"> 
+       <input type="radio" name="STP" value="1">
+       YES
+     </label>
+     <label class="radio">
+       <input type="radio" name="STP" value="0">
+       NO
+     </label>
+   </div>
+   <b>Enter HK :</b> <br>
+   <div class="control">
+     <label class="radio"> 
+       <input type="radio" name="HK" value="1">
+       YES
+     </label>
+     <label class="radio">
+       <input type="radio" name="HK" value="0">
+       NO
+     </label>
+   </div>
+   <b>Enter PB :</b> <br>
+   <div class="control">
+     <label class="radio"> 
+       <input type="radio" name="PB" value="1">
+       YES
+     </label>
+     <label class="radio">
+       <input type="radio" name="PB" value="0">
+       NO
+     </label>
+   </div>
+   <b>Enter VP :</b> <br>
+   <div class="control">
+     <label class="radio"> 
+       <input type="radio" name="VP" value="1">
+       YES
+     </label>
+     <label class="radio">
+       <input type="radio" name="VP" value="0">
+       NO
+     </label>
+   </div>
+          <!-- <p>Enter INTERNET:</p>
+          <input type="radio" name="INTERNET" value="1"> YES<br>  
+          <input type="radio" name="INTERNET" value="0"> NO<br> -->
+  
+          <!-- <p>Enter AC:</p>
+          <input type="radio" name="AC" value="1"> YES<br>  
+          <input type="radio" name="AC" value="0"> NO<br>
+  
+          <p>Enter CLUB:</p>
+          <input type="radio" name="CLUB" value="1"> YES<br>  
+          <input type="radio" name="CLUB" value="0"> NO<br> -->
+  
+          <!-- <p>Enter INTERCOM:</p>
+          <input type="radio" name="INTERCOM" value="1"> YES<br>  
+          <input type="radio" name="INTERCOM" value="0"> NO<br>
+  
+          <p>Enter CPA:</p>
+          <input type="radio" name="CPA" value="1"> YES<br>  
+          <input type="radio" name="CPA" value="0"> NO<br>
+  
+          <p>Enter FS:</p>
+          <input type="radio" name="FS" value="1"> YES<br>  
+          <input type="radio" name="FS" value="0"> NO<br>
+  
+          <p>Enter SECURITY:</p>
+          <input type="radio" name="SECURITY" value="1"> YES<br>  
+          <input type="radio" name="SECURITY" value="0"> NO<br>
+  
+          <p>Enter SC:</p>
+          <input type="radio" name="SC" value="1"> YES<br>  
+          <input type="radio" name="SC" value="0"> NO<br>
+  
+          <p>Enter GP:</p>
+          <input type="radio" name="GP" value="1"> YES<br>  
+          <input type="radio" name="GP" value="0"> NO<br>
+  
+          <p>Enter PARK:</p>
+          <input type="radio" name="PARK" value="1"> YES<br>  
+          <input type="radio" name="PARK" value="0"> NO<br>
+  
+          <p>Enter RWH:</p>
+          <input type="radio" name="RWH" value="1"> YES<br>  
+          <input type="radio" name="RWH" value="0"> NO<br>
+  
+          <p>Enter STP:</p>
+          <input type="radio" name="STP" value="1"> YES<br>  
+          <input type="radio" name="STP" value="0"> NO<br>
+  
+          <p>Enter HK:</p>
+          <input type="radio" name="HK" value="1"> YES<br>  
+          <input type="radio" name="HK" value="0"> NO<br>
+  
+          <p>Enter PB:</p>
+          <input type="radio" name="PB" value="1"> YES<br>  
+          <input type="radio" name="PB" value="0"> NO<br>
+  
+          <p>Enter VP:</p>
+          <input type="radio" name="VP" value="1"> YES<br>  
+          <input type="radio" name="VP" value="0"> NO<br>
+   -->
+   <b>Enter Water Supply: :</b> <br>
+   <div class="control">
+     <label class="radio"> 
+       <input type="radio" name="Water_supply" value="2">
+       BOREWELL
+     </label>
+     <label class="radio">
+       <input type="radio" name="Water_supply" value="1">
+       CORPORATION
+     </label>
+     <label class="radio">
+        <input type="radio" name="Water_supply" value="0">
+        CORP_BORE
+      </label>
+   </div>
+          <!-- <p>Enter Water_supply:</p>
+          <input type="radio" name="Water_supply" value="2">BOREWELL<br>
+      <input type="radio" name="Water_supply" value="1">CORPORATION<br>  
+          <input type="radio" name="Water_supply" value="0">CORP_BORE<br> -->
+          <b>Enter Water Supply: :</b> <br>
+          <div class="control">
+            <label class="radio"> 
+              <input type="radio" name="building_type" value="2">
+              AP
+            </label>
+            <label class="radio">
+              <input type="radio" name="building_type" value="3">
+              GC
+            </label>
+            <label class="radio">
+               <input type="radio" name="building_type" value="0">
+              IF
+             </label>
+             <label class="radio">
+                <input type="radio" name="building_type" value="1">
+               IH
+              </label>
+          </div>
+          <!-- <p>Enter Building Type:</p>
+          <input type="radio" name="building_type" value="2">AP<br>
+      <input type="radio" name="building_type" value="3">GC<br>  
+          <input type="radio" name="building_type" value="0">IF<br>
+          <input type="radio" name="building_type" value="1">IH<br> -->
+  
+          <div class="field">
+            <label class="label">Enter No of balconies: </label>
+              <div class="control">
+                  <p class="control has-icons-left">
+                <input class="input" type="number" placeholder="no of balconies" name="balconies">
+                <span class="icon is-small is-left">
+                  <i class="fas fa-city"></i>
+                </span>
+              </div>
+              </p>
+          </div>
+          <!-- <p>Enter NO. OF BALCONIES:</p>
+          <input type="number" name="balconies"> -->
+  
+  
+  
+        </div>
+        <br>
+        <div class="but">
+        <button class= "button is-danger is-outlined is-medium">Submit</button></div>
+        </div>
+        </div>
+        </div>
+      </form>
+  
+    </div> 
+    </div> 
+</div>
+  </body>
+</html>
